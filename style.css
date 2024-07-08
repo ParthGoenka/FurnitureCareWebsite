@@ -433,8 +433,8 @@
   }
   
   #cover {
-    width: 800px;
-    height: 800px;
+    width: 80%;
+    height: 80%;
     margin: 0 auto;
   }
   
@@ -443,7 +443,7 @@
     width: 100%;
     justify-content: center;
     display: flex;
-    font-size: 50px;
+    font-size:xx-large;
     color: darkred;
     
   }
