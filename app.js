@@ -29,6 +29,93 @@ if (isMobile) {
     });
 }
 
+const slides1 = document.querySelectorAll(".slide1")
+var counter1 = 0;
+slides1.forEach((slide1,index1) => {
+    slide1.style.left = `${index1 *100}%`
+})
+
+const goNext1 = () => {
+    counter1++;
+    slideImage1();
+}
+const goPrev1 = () => {
+    
+    counter1--;
+    if(counter1 < 0)
+    {
+        counter1 = 0;
+    }
+    slideImage1();
+}
+
+const slideImage1 = () =>{
+    slides1.forEach(
+        (slide1) => {
+            slide1.style.transform = `translateX(-${counter1*100}%)`
+        }
+    )
+}
+
+const slides2 = document.querySelectorAll(".slide2")
+var counter2 = 0;
+slides2.forEach((slide2,index2) => {
+    slide2.style.left = `${index2 *100}%`
+})
+
+const goNext2 = () => {
+    counter2++;
+    slideImage2();
+}
+const goPrev2 = () => {
+    
+    counter2--;
+    if(counter2 < 0)
+    {
+        counter2 = 0;
+    }
+    slideImage2();
+}
+
+const slideImage2 = () =>{
+    slides2.forEach(
+        (slide2) => {
+            slide2.style.transform = `translateX(-${counter2*100}%)`
+        }
+    )
+}
+
+const slides3 = document.querySelectorAll(".slide3")
+var counter3 = 0;
+slides3.forEach((slide3,index3) => {
+    slide3.style.left = `${index3 *100}%`
+})
+
+const goNext3 = () => {
+    counter3++;
+    slideImage3();
+}
+const goPrev3 = () => {
+    
+    counter3--;
+    if(counter3 < 0)
+    {
+        counter3 = 0;
+    }
+    slideImage3();
+}
+
+const slideImage3 = () =>{
+    slides3.forEach(
+        (slide3) => {
+            slide3.style.transform = `translateX(-${counter3*100}%)`
+        }
+    )
+}
+
+
+
+
 function popup(mssg, type){
     if(type == "alert"){
         if ($(".alert").length < 2){
@@ -80,3 +167,5 @@ window.onscroll = function() {
         document.getElementById("roll_back").style.display = "none";
     }
 }
+
+
